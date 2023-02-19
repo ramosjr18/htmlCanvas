@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja</title>
+</head>
+<body>
+    <form method="post" 
+    oninput="resultado.value=parseInt(value1.value)-parseInt(value2.value)-parseInt(value3.value)-parseInt(value4.value)">
+        <label for="">Dia</label>
+        <input type="number" name="" id="value1" value="0">
+        <br><br>
+        <label for="">Caja Total</label>
+        <input type="number" name="" id="value2" value="0">
+        <br><br>
+        <label for="">Total en carta</label>
+        <input type="number" name="" id="value3" value="0">
+        <br><br>
+        <label for="">Gastos</label>
+        <input type="number" name="" id="value4" value="0">
+        <br><br>
+        <label for="">Suma Total</label>
+        <output name="resultado" for="value1 value2 value3 value4 value5"></output>
+        <br><br>
+        
+    </form>
+    <br>
+    <form method="POST" oninput="tips.value=parseFloat(tip.value)*19/100">
+        <label for="">Tips en carta</label>
+        <input type="number" name="" id="tip" value="0">
+        <br> <br>
+        <label for="">Tips al sobre</label>
+        <output name="tips" for="tip"></output>
+    </form>
+</body>
+</html>
